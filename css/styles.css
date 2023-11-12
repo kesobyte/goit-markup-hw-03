@@ -8,10 +8,6 @@
   border-bottom: 1px solid #e7e9fc;
 }
 
-.header {
-  display: flex;
-}
-
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -85,16 +81,21 @@ body {
   gap: 40px;
 }
 
+/* First Section Style */
+
 .first-section {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 .header {
+  display: flex;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: #fff;
+  max-width: 496px;
 }
 
 .button {
@@ -106,6 +107,11 @@ body {
   letter-spacing: 0.04em;
   color: #fff;
   cursor: pointer;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 
 .button:hover {
@@ -197,4 +203,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+img {
+  display: block;
 }

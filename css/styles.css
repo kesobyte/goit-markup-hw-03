@@ -8,25 +8,26 @@
   --iris: #4d5ae5;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+}
+
 .main-header {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.container {
+.main-header > .container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
+  display: flex;
 }
 
 .top-nav {
   display: flex;
   align-items: center;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #434455;
-  background-color: #ffffff;
 }
 
 .logo {
@@ -50,8 +51,18 @@ body {
 
 .list {
   list-style: none;
+}
+
+.top-nav > .list {
   display: flex;
   gap: 40px;
+  margin-right: 0;
+}
+
+.contacts > .list {
+  display: flex;
+  gap: 40px;
+  margin-right: 0;
 }
 
 .nav-item .link {
@@ -97,7 +108,6 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #fff;
-  max-width: 496px;
 }
 
 .button {

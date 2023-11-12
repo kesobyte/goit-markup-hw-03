@@ -1,8 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --iris: #4d5ae5;
 }
-
-/* Header Style */
 
 .main-header {
   border-bottom: 1px solid #e7e9fc;
@@ -80,8 +84,6 @@ body {
   display: flex;
   gap: 40px;
 }
-
-/* First Section Style */
 
 .first-section {
   background-color: #2e2f42;

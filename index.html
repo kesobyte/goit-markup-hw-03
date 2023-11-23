@@ -5,59 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
-
+    <!-- Local CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="main-header">
-      <div class="container">
-        <nav class="top-nav">
-          <a class="logo link" href="./index.html"
-            >Web<span class="logotext">Studio</span></a
-          >
-          <ul class="list">
-            <li class="nav-item">
-              <a class="link" href="./index.html">Studio</a>
-            </li>
-            <li class="nav-item">
-              <a class="link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item"><a class="link" href="">Contacts</a></li>
-          </ul>
-        </nav>
-        <address class="contacts">
-          <ul class="list">
-            <li class="nav-contact">
-              <a class="link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="nav-contact">
-              <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-            </li>
-          </ul>
-        </address>
-      </div>
+    <!-- Header -->
+    <header>
+      <nav>
+        <a class="logo link" href="./index.html"
+          >Web<span class="header-logo">Studio</span></a
+        >
+        <ul class="list">
+          <li class="list-item">
+            <a class="item link" href="./index.html">Studio</a>
+          </li>
+          <li class="list-item">
+            <a class="item link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="list-item"><a class="item link" href="">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="contacts">
+        <ul class="list">
+          <li class="contact-item">
+            <a class="contact link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contact-item">
+            <a class="contact link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </address>
     </header>
-    <main>
-      <div class="container">
-        <section class="first-section">
-          <h1 class="header">Effective Solutions for Your Business</h1>
-          <button class="button" type="button">Order Service</button>
-        </section>
-      </div>
 
+    <!-- Main -->
+    <main>
+      <!-- First Section -->
+      <section class="first-section">
+        <h1 class="header">Effective Solutions for Your Business</h1>
+        <button class="button" type="button">Order Service</button>
+      </section>
+
+      <!-- Second Section -->
       <section>
         <h2>List</h2>
         <ul class="list">
@@ -95,8 +95,9 @@
         </ul>
       </section>
 
+      <!-- Third Section -->
       <section>
-        <h2 class="third-header">What are we doing</h2>
+        <h2 class="header-title">What are we doing</h2>
         <ul class="list">
           <li>
             <img src="./images/img1.jpg" width="360" alt="computer-monitor" />
@@ -110,11 +111,12 @@
         </ul>
       </section>
 
+      <!-- Fourth Section -->
       <section class="fourth-section">
-        <h2 class="fourth-header">Our Team</h2>
+        <h2 class="header-title">Our Team</h2>
 
         <ul class="list">
-          <li class="list-item">
+          <li class="item">
             <img
               src="./images/man-with-laptop.jpg"
               width="264"
@@ -124,13 +126,13 @@
             <p class="list-text">Product Designer</p>
           </li>
 
-          <li class="list-item">
+          <li class="item">
             <img src="./images/smiling-man.jpg" width="264" alt="smiling-man" />
             <h3 class="list-header">Tom Ford</h3>
             <p class="list-text">Frontend Developer</p>
           </li>
 
-          <li class="list-item">
+          <li class="item">
             <img
               src="./images/girl-pink-shirt.jpg"
               width="264"
@@ -140,7 +142,7 @@
             <p class="list-text">Marketing</p>
           </li>
 
-          <li class="list-item">
+          <li class="item">
             <img
               src="./images/man-gray-shirt.jpg"
               width="264"
@@ -152,11 +154,13 @@
         </ul>
       </section>
     </main>
+
+    <!-- Footer -->
     <footer class="footer">
       <a class="logo link" href="./index.html"
-        >Web<span class="logo-footer">Studio</span></a
+        >Web<span class="footer-logo">Studio</span></a
       >
-      <p class="logo-footer-text">
+      <p class="footer-text">
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
       </p>

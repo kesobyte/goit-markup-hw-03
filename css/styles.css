@@ -1,34 +1,21 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+:root {
+  --slate: #434455;
+  --iris: #4d5ae5;
+  --white: #ffffff;
+  --navy-blue: #2e2f42;
+  --ocean: #404bbf;
+  --cloud: #f4f4fd;
 }
 
-:root {
-  --iris: #4d5ae5;
-}
+/* INDEX PAGE */
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #434455;
-  background-color: #ffffff;
+  color: var(--slate);
+  background-color: var(--white);
 }
 
-.main-header {
-  border-bottom: 1px solid #e7e9fc;
-}
-
-.main-header > .container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-  display: flex;
-}
-
-.top-nav {
-  display: flex;
-  align-items: center;
-}
+/* Header */
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -37,149 +24,140 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
-  margin-right: 76px;
+  color: var(--iris);
 }
+
+/* Navigation Items */
 
 .link {
   text-decoration: none;
 }
 
-.logotext {
-  color: #2e2f42;
+.header-logo {
+  color: var(--navy-blue);
 }
 
 .list {
   list-style: none;
 }
 
-.top-nav > .list {
-  display: flex;
-  gap: 40px;
-  margin-right: 0;
-}
-
-.contacts > .list {
-  display: flex;
-  gap: 40px;
-  margin-right: 0;
-}
-
-.nav-item .link {
+.list-item > .item {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
-  padding: 24px 0;
+  color: var(--navy-blue);
 }
 
-.nav-contact .link {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
+li > .link:hover,
+li > .link:focus {
+  color: var(--ocean);
 }
 
-.link:hover {
-  color: #404bbf;
-}
-
-.link:focus {
-  color: #404bbf;
-}
+/* Address */
 
 .contacts {
   font-style: normal;
-  display: flex;
-  gap: 40px;
 }
 
+.contact-item > .contact {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+/* First Section */
+
 .first-section {
-  background-color: #2e2f42;
-  padding: 188px 0;
+  background-color: var(--navy-blue);
 }
 
 .header {
-  display: flex;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #fff;
+  color: var(--white);
 }
 
 .button {
-  background-color: #4d5ae5;
-  font-family: 'Roboto', sans-serif;
+  background-color: var(--iris);
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: var(--white);
   cursor: pointer;
-  display: block;
-  min-width: 169px;
-  height: 56px;
-  border: none;
-  border-radius: 4px;
 }
 
-.button:hover {
-  background-color: #404bbf;
-}
-
+.button:hover,
 .button:focus {
-  background-color: #404bbf;
+  background-color: var(--ocean);
 }
+
+/* Second Section */
 
 .list-header {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--navy-blue);
 }
 
 .list-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--slate);
 }
 
-.third-header,
-.fourth-header {
+/* Third Section */
+
+.header-title {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--navy-blue);
 }
+
+/* Fourth Section */
 
 .fourth-section {
-  background-color: #f4f4fd;
+  background-color: var(--cloud);
 }
 
-.list .list-item {
-  background-color: #fff;
+/* Reused third section header from main */
+
+.list .item {
+  background-color: var(--white);
 }
+
+/* Reused item header from main  */
+
+/* Footer */
 
 .footer {
-  background-color: #2e2f42;
+  background-color: var(--navy-blue);
 }
 
-.logo-footer {
-  color: #f4f4fd;
+.footer-logo {
+  color: var(--cloud);
 }
 
-.logo-footer-text {
+.footer-text {
   line-height: 1.5;
-  color: #f4f4fd;
+  color: var(--cloud);
   letter-spacing: 0.02em;
 }
+
+/* FORTFOLIO PAGE */
+
+/* Main */
 
 .btn-menu {
   font-family: inherit;
@@ -187,36 +165,15 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
-  background-color: #f4f4fd;
+  color: var(--iris);
+  background-color: var(--cloud);
   cursor: pointer;
 }
 
-.btn-menu:hover {
-  color: #ffffff;
-  background-color: #404bbf;
-}
-
+.btn-menu:hover,
 .btn-menu:focus {
-  color: #ffffff;
-  background-color: #404bbf;
+  color: var(--white);
+  background-color: var(--ocean);
 }
 
-.list .list-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-
-.list .list-desc {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-
-img {
-  display: block;
-}
+/* Reused item header from main  */

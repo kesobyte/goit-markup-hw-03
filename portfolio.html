@@ -5,49 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
-
+    <!-- Local CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- Header -->
+    <header>
       <nav>
         <a class="logo link" href="./index.html"
-          >Web<span class="logotext">Studio</span></a
+          >Web<span class="header-logo">Studio</span></a
         >
         <ul class="list">
-          <li class="nav-item">
-            <a class="link" href="./index.html">Studio</a>
+          <li class="list-item">
+            <a class="item link" href="./index.html">Studio</a>
           </li>
-          <li class="nav-item">
-            <a class="link" href="./portfolio.html">Portfolio</a>
+          <li class="list-item">
+            <a class="item link" href="./portfolio.html">Portfolio</a>
           </li>
-          <li class="nav-item"><a class="link" href="">Contacts</a></li>
+          <li class="list-item"><a class="item link" href="">Contacts</a></li>
         </ul>
       </nav>
       <address class="contacts">
         <ul class="list">
-          <li class="nav-contact">
-            <a class="link" href="mailto:info@devstudio.com"
+          <li class="contact-item">
+            <a class="contact link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li class="nav-contact">
-            <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          <li class="contact-item">
+            <a class="contact link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
           </li>
         </ul>
       </address>
     </header>
+
+    <!-- Main -->
     <main>
       <section>
         <h1>Services</h1>
@@ -62,22 +64,22 @@
 
         <ul class="list">
           <li>
-            <a class="link" href="">
+            <a class="list link" href="">
               <img src="./images/bank-app.jpg" alt="banking app" width="360" />
-              <h2 class="list-title">Banking App Interface Concept</h2>
-              <p class="list-desc">App</p>
+              <h2 class="list-header">Banking App Interface Concept</h2>
+              <p class="list-text">App</p>
             </a>
           </li>
 
           <li>
-            <a class="link" href="">
+            <a class="list link" href="">
               <img
                 src="./images/cashless.jpg"
                 alt="cashless payment"
                 width="360"
               />
-              <h2 class="list-title">Cashless Payment</h2>
-              <p class="list-desc">Marketing</p>
+              <h2 class="list-header">Cashless Payment</h2>
+              <p class="list-text">Marketing</p>
             </a>
           </li>
 
@@ -88,8 +90,8 @@
                 alt="meditation app"
                 width="360"
               />
-              <h2 class="list-title">Meditation App</h2>
-              <p class="list-desc">App</p>
+              <h2 class="list-header">Meditation App</h2>
+              <p class="list-text">App</p>
             </a>
           </li>
 
@@ -100,8 +102,8 @@
                 alt="taxi service"
                 width="360"
               />
-              <h2 class="list-title">Taxi Service</h2>
-              <p class="list-desc">Marketing</p>
+              <h2 class="list-header">Taxi Service</h2>
+              <p class="list-text">Marketing</p>
             </a>
           </li>
 
@@ -112,8 +114,8 @@
                 alt="screen illustrations"
                 width="360"
               />
-              <h2 class="list-title">Screen Illustrations</h2>
-              <p class="list-desc">Design</p>
+              <h2 class="list-header">Screen Illustrations</h2>
+              <p class="list-text">Design</p>
             </a>
           </li>
 
@@ -124,16 +126,16 @@
                 alt="online course"
                 width="360"
               />
-              <h2 class="list-title">Online Courses</h2>
-              <p class="list-desc">Marketing</p>
+              <h2 class="list-header">Online Courses</h2>
+              <p class="list-text">Marketing</p>
             </a>
           </li>
 
           <li>
             <a class="link" href="">
               <img src="./images/ig-stories.jpg" alt="IG stories" width="360" />
-              <h2 class="list-title">Instagram Stories Concept</h2>
-              <p class="list-desc">Design</p>
+              <h2 class="list-header">Instagram Stories Concept</h2>
+              <p class="list-text">Design</p>
             </a>
           </li>
 
@@ -144,8 +146,8 @@
                 alt="organic food"
                 width="360"
               />
-              <h2 class="list-title">Organic Food</h2>
-              <p class="list-desc">Web Site</p>
+              <h2 class="list-header">Organic Food</h2>
+              <p class="list-text">Web Site</p>
             </a>
           </li>
 
@@ -156,18 +158,20 @@
                 alt="fresh coffee"
                 width="360"
               />
-              <h2 class="list-title">Fresh Coffee</h2>
-              <p class="list-desc">Web Site</p>
+              <h2 class="list-header">Fresh Coffee</h2>
+              <p class="list-text">Web Site</p>
             </a>
           </li>
         </ul>
       </section>
     </main>
+
+    <!-- Footer -->
     <footer class="footer">
       <a class="logo link" href="./index.html"
-        >Web<span class="logo-footer">Studio</span></a
+        >Web<span class="footer-logo">Studio</span></a
       >
-      <p class="logo-footer-text">
+      <p class="footer-text">
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
       </p>

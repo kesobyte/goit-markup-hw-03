@@ -71,7 +71,7 @@ body {
   gap: 40px;
 }
 
-.list-item > .item {
+.list-item > .link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;

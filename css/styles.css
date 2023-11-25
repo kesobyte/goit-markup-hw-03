@@ -36,7 +36,8 @@ body {
   display: flex;
 }
 
-.nav {
+.nav,
+.contacts {
   display: flex;
   align-items: center;
 }
@@ -66,7 +67,7 @@ body {
   list-style: none;
 }
 
-.menu {
+.nav > .list {
   display: flex;
   gap: 40px;
 }
@@ -97,7 +98,7 @@ li > .link:focus {
   color: var(--slate);
 }
 
-.contacts .list {
+.contacts > .list {
   display: flex;
   gap: 40px;
 }
@@ -181,8 +182,8 @@ li > .link:focus {
   gap: 24px;
 }
 
-.info.list > .info-card {
-  width: calc((100% - 72px) / 4);
+.info-card {
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 /* Third Section */
@@ -323,7 +324,7 @@ img {
   row-gap: 48px;
 }
 
-.svc.list > .svc-item {
+.svc-item {
   width: calc((100% - 48px) / 3);
 }
 

@@ -97,7 +97,7 @@ li > .link:focus {
   color: var(--slate);
 }
 
-.contact-menu.list {
+.address {
   display: flex;
   gap: 40px;
 }
@@ -183,7 +183,7 @@ li > .link:focus {
 }
 
 .info-card {
-  flex-basis: calc((100% - 72px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 /* Third Section */
@@ -195,14 +195,11 @@ li > .link:focus {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--navy-blue);
+  margin-bottom: 72px;
 }
 
 .third-section {
   padding-bottom: 120px;
-}
-
-.header-title {
-  margin-bottom: 72px;
 }
 
 .service.list {
@@ -253,6 +250,7 @@ li > .link:focus {
 
 .footer {
   background-color: var(--navy-blue);
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -263,11 +261,23 @@ li > .link:focus {
   line-height: 1.5;
   color: var(--cloud);
   letter-spacing: 0.02em;
+  max-width: 264px;
+}
+
+.footer .link {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 /* FORTFOLIO PAGE */
 
 /* Main */
+
+/* Buttons */
+
+.services-section {
+  padding: 96px 0 120px 0;
+}
 
 .btn-menu {
   font-family: inherit;
@@ -278,12 +288,23 @@ li > .link:focus {
   color: var(--iris);
   background-color: var(--cloud);
   cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid var(--cornflower);
+  border-radius: 4px;
+}
+
+.btn.list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
 }
 
 .btn-menu:hover,
 .btn-menu:focus {
   color: var(--white);
   background-color: var(--ocean);
+  margin-bottom: 1px solid transparent;
 }
 
 /* Reused item header from main  */
@@ -292,4 +313,23 @@ li > .link:focus {
 
 img {
   display: block;
+}
+
+/* Services List */
+
+.svc.list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.svc-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.svc-info {
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower);
+  border-top: none;
 }

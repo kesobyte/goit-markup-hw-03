@@ -97,7 +97,7 @@ li > .link:focus {
   color: var(--slate);
 }
 
-.address {
+.contacts .list {
   display: flex;
   gap: 40px;
 }
@@ -150,7 +150,6 @@ li > .link:focus {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -182,7 +181,7 @@ li > .link:focus {
   gap: 24px;
 }
 
-.info-card {
+.info.list > .info-card {
   width: calc((100% - 72px) / 4);
 }
 
@@ -304,7 +303,7 @@ li > .link:focus {
 .btn-menu:focus {
   color: var(--white);
   background-color: var(--ocean);
-  margin-bottom: 1px solid transparent;
+  border: 1px solid transparent;
 }
 
 /* Reused item header from main  */
@@ -324,7 +323,7 @@ img {
   row-gap: 48px;
 }
 
-.svc-item {
+.svc.list > .svc-item {
   width: calc((100% - 48px) / 3);
 }
 

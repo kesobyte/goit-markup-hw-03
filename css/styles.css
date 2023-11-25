@@ -55,6 +55,7 @@ body {
 
 .link {
   text-decoration: none;
+  padding: 24px 0;
 }
 
 .header-logo {
@@ -63,6 +64,9 @@ body {
 
 .list {
   list-style: none;
+}
+
+.menu {
   display: flex;
   gap: 40px;
 }
@@ -73,7 +77,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
-  padding: 24px 0;
 }
 
 li > .link:hover,
@@ -83,11 +86,16 @@ li > .link:focus {
 
 /* Address */
 
-.contacts {
+.address {
   font-style: normal;
 }
 
-.contact-item > .contact {
+.contact {
+  display: flex;
+  gap: 40px;
+}
+
+.contact-item > .link {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -103,12 +111,13 @@ li > .link:focus {
   padding: 188px 0;
 }
 
-.header {
+.main-header {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white);
+  max-width: 496px;
 }
 
 .button {
@@ -147,6 +156,10 @@ li > .link:focus {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
+}
+
+.second-section {
+  padding: 120px 0;
 }
 
 /* Third Section */

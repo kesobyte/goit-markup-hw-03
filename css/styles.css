@@ -90,7 +90,7 @@ li > .link:focus {
   font-style: normal;
 }
 
-.contact-item > .item {
+.contact-item > .contact {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -143,12 +143,17 @@ li > .link:focus {
 
 /* Second Section */
 
+h2 {
+  visibility: hidden;
+}
+
 .list-header {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+  margin-bottom: 8px;
 }
 
 .list-text {
@@ -162,6 +167,15 @@ li > .link:focus {
   padding: 120px 0;
 }
 
+.info.list {
+  display: flex;
+  gap: 24px;
+}
+
+.info-card {
+  width: calc((100% - 72px) / 4);
+}
+
 /* Third Section */
 
 .header-title {
@@ -173,16 +187,54 @@ li > .link:focus {
   color: var(--navy-blue);
 }
 
+.third-section {
+  padding-bottom: 120px;
+}
+
+.header-title {
+  margin-bottom: 72px;
+}
+
+.service.list {
+  display: flex;
+  gap: 24px;
+}
+
+.service-info {
+  width: calc((100% - 48px) / 3);
+}
+
 /* Fourth Section */
 
 .fourth-section {
   background-color: var(--cloud);
+  padding: 120px 0;
+}
+
+.team.list {
+  display: flex;
+  gap: 24px;
 }
 
 /* Reused third section header from main */
 
-.list .item {
+.team-member {
   background-color: var(--white);
+  width: calc((100% - 72px) / 4);
+  border-radius: 0 0 4px 4px;
+}
+
+.member-info {
+  padding: 32px 0;
+}
+
+.list-header {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.list-text {
+  text-align: center;
 }
 
 /* Reused item header from main  */

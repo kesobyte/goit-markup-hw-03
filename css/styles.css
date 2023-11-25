@@ -180,6 +180,7 @@ li > .link:focus {
 .info.list {
   display: flex;
   gap: 24px;
+  padding: 0;
 }
 
 .info-card {
@@ -208,7 +209,7 @@ li > .link:focus {
 }
 
 .service-info {
-  flex-basis: calc((100% - 3 * 16px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 /* Fourth Section */
@@ -250,7 +251,7 @@ li > .link:focus {
 
 .footer {
   background-color: var(--navy-blue);
-  padding: 100px 0;
+  /* padding: 100px 0; */
 }
 
 .footer-logo {
@@ -322,10 +323,11 @@ img {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+  padding: 0px;
 }
 
 .svc-item {
-  width: calc((100% - 48px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 .svc-info {

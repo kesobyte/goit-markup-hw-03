@@ -97,7 +97,7 @@ li > .link:focus {
   color: var(--slate);
 }
 
-.contact-menu {
+.contact-menu.list {
   display: flex;
   gap: 40px;
 }
@@ -183,7 +183,7 @@ li > .link:focus {
 }
 
 .info-card {
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 /* Third Section */
@@ -211,7 +211,7 @@ li > .link:focus {
 }
 
 .service-info {
-  flex-basis: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 3 * 16px) / 3);
 }
 
 /* Fourth Section */
@@ -230,7 +230,7 @@ li > .link:focus {
 
 .team-member {
   background-color: var(--white);
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
   border-radius: 0 0 4px 4px;
 }
 

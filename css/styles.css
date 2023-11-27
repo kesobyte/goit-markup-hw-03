@@ -1,3 +1,12 @@
+/* CSS Resets */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS Variables */
+
 :root {
   --slate: #434455;
   --iris: #4d5ae5;
@@ -34,6 +43,7 @@ body {
 
 .top-header {
   display: flex;
+  justify-content: space-between;
 }
 
 .nav,
@@ -119,6 +129,7 @@ li > .link:focus {
   letter-spacing: 0.02em;
   color: var(--white);
   max-width: 496px;
+  margin: 0 auto 48px;
 }
 
 .button {
@@ -135,6 +146,7 @@ li > .link:focus {
   height: 56px;
   border: none;
   border-radius: 4px;
+  margin: 0 auto;
 }
 
 .button:hover,
@@ -180,7 +192,6 @@ li > .link:focus {
 .info.list {
   display: flex;
   gap: 24px;
-  padding: 0;
 }
 
 .info-card {
@@ -323,7 +334,6 @@ img {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  padding: 0px;
 }
 
 .svc-item {
